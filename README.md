@@ -1,111 +1,65 @@
-# PRODIGY_WD_01
-Interactive Navigation Menu
+# PRODIGY_WD_1
+# Interactive Navigation Menu
 
-Welcome to the Interactive Navigation Menu project! This project includes a responsive landing page with a fixed navigation bar that changes its appearance when scrolling.
+This project is a simple, responsive landing page with an interactive navigation menu. The page includes sections for Home, About, Services, and Contact. The navigation menu changes its background color and adds a shadow when the user scrolls down the page. The page also includes Font Awesome icons for visual enhancement.
 
-Features
+## Features
 
-1. Fixed Navigation Bar: Stays at the top of the page while scrolling.
+1. *Responsive Navigation Bar*:
+   - The navigation bar is fixed at the top and stretches the full width of the page.
+   - As the user scrolls down, the navigation bar changes its background color and adds a subtle shadow effect to enhance visibility.
 
-2. Responsive Design: Adjusts to various screen sizes.
+2. *Smooth Scrolling Effect*:
+   - The page includes links in the navigation bar that scroll smoothly to different sections: Home, About, Services, and Contact.
 
-3. Icon-Based Navigation: Uses Font Awesome icons for a visual appeal.
+3. *Font Awesome Icons*:
+   - Font Awesome icons are used for the menu items, adding a visual element to each section link.
 
-4. Scroll Effect: Navigation bar background color changes on scroll.
+4. *Section-based Layout*:
+   - The page is divided into different sections, each containing a title and description, making it ideal for a landing page.
 
+## Technologies Used
 
-Structure
+- *HTML5*: The structure of the page.
+- *CSS3*: For styling the navigation bar, sections, and hover effects.
+- *JavaScript*: For the scroll event listener that changes the navigation bar style on scrolling.
+- *Font Awesome*: For adding icons to the menu items.
 
-The project is composed of three primary files:
+## Code Overview
 
-1. 'index.html': The main HTML file for the structure of the webpage.
+### HTML Structure
 
-2. 'mystyles.css': The CSS file for styling the webpage.
+- The page is structured with a <nav> element containing the navigation menu and several <section> elements for the content.
+- The navigation bar includes icons and text links to different sections of the page.
 
-3. 'myscript.js': The JavaScript file for dynamic behavior (e.g., scroll effects).
+### CSS Styling
 
+- The body uses the Arial, sans-serif font family.
+- The navigation bar is styled with a background color (#DEB887), and its color changes when the user scrolls.
+- A smooth transition effect is applied to the navigation bar's background color and box-shadow for a more dynamic feel.
 
-Installation
+### JavaScript Functionality
 
-1. Clone the Repository:
+- The script listens for a scroll event and adds a scrolled class to the navigation bar when the user scrolls past 50 pixels. This class changes the background color and adds a box-shadow.
 
-git clone https://github.com/yourusername/interactive-navigation-menu.git
+## Installation
 
-2. Navigate to the Project Directory:
-   
-cd interactive-navigation-menu
+No specific installation steps are required for this project. Simply open the index.html file in your browser, and the page will render as described.
 
-3. Open index.html in a web browser to view the webpage.
+## Usage
 
-File Descriptions
+1. Clone or download the project files.
+2. Open the index.html file in any modern browser.
+3. Scroll down to see the interactive navigation bar in action.
+4. Use the menu links to navigate between the different sections of the page.
 
-'index.html'
+## Customization
 
-This file contains the basic HTML structure of the webpage. It includes:
-
-A navigation bar with links to different sections.
-
-Sections for Home, About, Services, and Contact.
-
-Links to external Font Awesome icons and CSS/JS files.
-
-
-'mystyles.css'
-
-This file contains the styles for the webpage. Key features include:
-
-1.Fixed positioning for the navigation bar. 
-
-2.Styling for the navigation bar, including a color transition effect on scroll. 
-
-3.Styling for content sections and hover effects for links.
-
-
-'myscript.js'
-
-This JavaScript file adds dynamic behavior to the webpage:
-
-1.It listens for the scroll event and adds/removes the 'scrolled' class to the navigation bar based on the scroll position. 
+- *Icons*: You can change the icons by updating the classes in the navigation links. Refer to the [Font Awesome Icon Library](https://fontawesome.com/icons) for more options.
+- *Colors*: The colors of the navigation bar, sections, and text can be customized by modifying the CSS styles in the <style> section of the code.
+- *Sections*: Add or remove sections as needed by creating additional <section> elements in the HTML.
 
 
+## Deployment
 
-Dependencies
-
-1. Font Awesome: For icons used in the navigation bar.
-
-2. Included via CDN in the HTML head.
-
-
-
-Usage
-
-1. Scroll Down: Observe the background color change of the navigation bar.
-
-2. Click Navigation Links: The page will scroll smoothly to the corresponding sections.
-
-
-
-Customization
-
-1. Change Colors: Modify the 'background-color' properties in 'mystyles.css'. 
-
-2. Adjust Scroll Threshold: Update the value in 'myscript.js' to change when the navigation bar color changes. 
-
-
-3. Add More Sections: Add new sections in 'index.html' and corresponding navigation links.
-
-
-Contributing
-
-
-Feel free to open issues or submit pull requests if you have suggestions or improvements.
-
-
-
-
-Acknowledgments
-
-Font Awesome: Provides the icons used in the navigation bar.
-
-Enjoy using the Interactive Navigation Menu! If you have any questions or need further assistance, feel free to reach out.
-
+link: https://archana-128.github.io/PRODIGY_WD_01/
