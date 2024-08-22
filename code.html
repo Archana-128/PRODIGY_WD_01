@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8"> <!--Input of any character can be done in website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+	<link rel="icon" href="C:\Users\Dell\Downloads/programming.png">	<!-- Tab icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #DEB887;
+    color: black;
+    padding: 10px ;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav.scrolled {
+    background-color:#FFFAF0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(22, 19, 222);
+}
+
+.content {
+    padding-top: 60px; /* Adjust based on nav height */
+}
+
+section {
+    padding: 60px;
+    margin: 20px 0;
+    background: #FFF8DC ;
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+	<h1>Responsive Landing Page</h1>
+        <ul>
+            <i class="fa fa-home"></i><li><a href="#home">Home</a></li> 
+            <i class="fa-solid fa-address-card"></i><li><a href="#about">About</a></li> 
+            <i class="fa-solid fa-gears"></i><li><a href="#services">Services</a></li>
+            <i class="fa-solid fa-phone"></i><li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <!-- to make scrolling happen -->
+        <section id="home">
+            <h1>Home</h1>
+            <p>Welcome to our Home Page.</p>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+            <p>About us section.</p>
+        </section>
+        <section id="services">
+            <h1>Services</h1>
+            <p>Our Services Section.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Contact us Section.</p>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+});
+    </script>
+</body>
+</html>
